@@ -1,1 +1,1 @@
-2019 Staj Sayfasıdır.
+2019 Yaz Stajı Sayfasıdır.
