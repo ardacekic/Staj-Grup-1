@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/loginblue">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/searchPageText"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/style_radius"
+            android:hint="@string/search" />
+
+        <Button
+            android:id="@+id/butonSearch"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/style_radius_button"
+            android:text="@string/search_buton" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_results"
+            android:textSize="25dp"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPaleGrey"
+            android:layout_marginBottom="5dp"/>
+        <ListView
+            android:id="@+id/searchResultListview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"></ListView>
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_search" />
+
+        <ImageButton
+            android:id="@+id/addButton"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_add_circle" />
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_person_menu" />
+    </LinearLayout>
+</RelativeLayout>

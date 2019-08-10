@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ProjectV1.0</string>
+    <string name="server_url">http://7e0d342d.ngrok.io</string>
+    <string name="addPictures">Add Images</string>
+    <string name="addGpsData">Add Location Data</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="sing_up">Sing Up</string>
+    <string name="setting">Settings</string>
+    <string name="quit">Exit</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="description_text_one">Share Your Data</string>
+    <string name="description_text_two">See Friend\'s</string>
+    <string name="login">LOGIN</string>
+    <string name="search">Search</string>
+    <string name="search_buton">Find</string>
+    <string name="search_results">Search Results</string>
+    <string name="user_info">User Information</string>
+</resources>

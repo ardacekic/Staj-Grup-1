@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profil">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/primary_light"
+            android:padding="15dp"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="user name"
+                android:textColor="#090808"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="35dp"
+            android:background="@color/primary_light"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/btnUserGpsDatas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="#C0BDBD"
+                    android:drawableTint="#000E0D0D"
+                    android:padding="15dp"
+                    android:text="Last Locations"
+                    android:textColor="@color/primary_text"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btnUserImageDatas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="#C0BDBD"
+                    android:padding="15dp"
+                    android:text="My Images"
+                    android:textColor="@color/primary_text"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btnSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="#C0BDBD"
+                    android:padding="15dp"
+                    android:text="@string/setting"
+                    android:textColor="@color/primary_text"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btnExit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FA0505"
+                    android:padding="15dp"
+                    android:text="@string/quit"
+                    android:textColor="@color/primary_text"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/ic_search" />
+
+        <ImageButton
+            android:id="@+id/addButton"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/ic_add_circle" />
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/ic_person_menu" />
+    </LinearLayout>
+</RelativeLayout>
